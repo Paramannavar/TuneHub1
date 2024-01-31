@@ -2,13 +2,48 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Admin Page</title>
+<style>
+  body
+  {   
+     font-family:Arial,sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 100vh;
+     margin:0;
+     background-color:#f4f4f4;
+     background: url('p8.jpg') no-repeat;
+     background-size: cover;
+  }
+  .container
+  { 
+    text-align: center;
+  }
+  a
+  { 
+      display: block;
+      margin:10px;
+      padding:10px;
+      text-decoration: none;
+      color:#007bff;
+      border:1px solid #007bff;
+      border-radius: 5px;
+  }
+  a:hover
+  {
+     background-color: #007bff;
+     color:#fff;
+  }
+</style>
 </head>
 <body>
+<div class="container">
 <h1>Admin Home:</h1>
 <a href="newSong">Add a new song</a>
 <a href="viewSongs">View all songs</a>
 <a href="createPlaylist">Create a playlist</a>
 <a href="viewPlaylists">View all a playlist</a>
+</div>
 </body>
 </html>

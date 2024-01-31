@@ -3,12 +3,52 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Tune Hub:Home</title>
-<link rel="stylesheet" th:href="@{/css/style.css}">
+<style>
+   body
+   {  
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-image: url('p6.jpg');
+      background-size: cover;
+      background-position: center;
+   }
+   .hbox
+   {
+       border:1px solid #ccc;
+       padding: 20px;
+       text-align: center;
+       width: 300px;
+       background-color: rgba(255,255,255,0.8);
+   }
+   .button
+   { 
+      display:inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      text-decoration: none;
+      color: #fff;
+      background-color: #007bff;
+      border:1px solid  #007bff;
+      border-radius: 5px;
+   }
+   .button:hover
+   {
+      background-color: #0056b3;
+      border-color: #0056b3
+   }
+   
+</style>
 </head>
 <body>
-<a href="login">Login</a>
-<a href="registration">Register</a>
-
+<div class="hbox">
+<h2>Login or Register</h2>
+<a href="login" class="button">LOGIN</a>
+<br/><br/>
+<a href="registration" class="button">REGISTER</a>
+</div>
 
 </body>
 </html>
